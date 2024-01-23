@@ -4,9 +4,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+
     
     
 }
+
 
 nav{/*le agremagos sombra a nuetro navbar*/
     box-shadow: 0 0 2rem -1rem; 
@@ -88,7 +90,22 @@ nav{/*le agremagos sombra a nuetro navbar*/
     
     
 
-}  
+}
+
+
+.contenedor1{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),url(https://bilbao.fisio-clinics.com/sites/default/files/styles/cabecera_articulo/public/field/image/funcional_bilbao.jpg?itok=34o52Hp4);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
 
 /*::: fin inicio de card de subscribirme :::*/
 
@@ -101,12 +118,11 @@ nav{/*le agremagos sombra a nuetro navbar*/
     justify-content: center;
     min-height: 75vh;
     background: white;
-    padding: 20px;
 }
 
 
 .carta{
-    margin: 10px;
+    margin: 15px;
     width: 200px;
     height: 200px;
     border-radius: 5px;
@@ -195,6 +211,7 @@ nav{/*le agremagos sombra a nuetro navbar*/
 
 /*:::box acerca de  :::*/
 
+
 .box ul li {
     list-style: none;
     
@@ -212,7 +229,21 @@ nav{/*le agremagos sombra a nuetro navbar*/
     
 
 }
-/**/
+/*---------------------------------------PROMOCIONES----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------PROMOCIONES----------------------------------------------------------------------*/
 
 /* ::: box redes sociales :::*/
 .redes-container{
