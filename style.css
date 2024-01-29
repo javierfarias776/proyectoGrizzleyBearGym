@@ -10,6 +10,7 @@
 }
 
 
+
 nav{/*le agremagos sombra a nuetro navbar*/
     box-shadow: 0 0 2rem -1rem; 
     background-color: orange;
@@ -66,8 +67,8 @@ nav{/*le agremagos sombra a nuetro navbar*/
 /*::: section de instalaciones en pag inicio :::*/
 .container{
     text-align: center;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
 }
 .row{
      margin: 20px;
