@@ -17,6 +17,11 @@ nav{/*le agremagos sombra a nuetro navbar*/
 
 }
 
+.bodyubi{
+    background-color: black;
+}
+
+
 
 
 /*::: animacion subrayado de items en navBar :::*/
@@ -219,7 +224,7 @@ nav{/*le agremagos sombra a nuetro navbar*/
 }
 
 .box ul li a{
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     text-decoration: none;
 }
