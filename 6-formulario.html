@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body-color">
+  <!--:::: NavBar ::::-->
+    <main>
+      <nav class="navg navbar navbar-expand-lg navbar-light bg-ligth">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="the-bears-logo-V1/Group 7.png" alt="logo" class="w-75"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse animation" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="1-inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="2-promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="3-aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="4-instalaciones.html">Instalaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="5-ubicaciones.html">Ubicaciones</a>
+                  </li>                 
+                </ul>
+              </div>
+            </div>
+        </nav>
+      </main>
+  <!--:::: Fin De NavBar ::::-->
+<div class="body-form">
+
+  <div class="form-content">
+    <h2>Enviar formulario</h2>
+    <form action="https://formsubmit.co/edwincarrillo.776@gmail.com" method="POST">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name">
+
+      <label for="name">Apellido</label>
+      <input type="text" name="apellido" id="apellido">
+      
+      <label for="email">Correo Electronico</label>
+      <input type="email" name="email" id="email">
+      
+          <label for="subject">Asunto</label>
+          <input type="text" name="subject" id="subject">
+
+          <label for="comments">Comentarios</label>
+          <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+          <input id="btnbtn" type="submit" value="Enviar">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/6-formulario.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          
+        </form>
+      </div>
+    </div>  
+    <button id="boton">click</button>
+      
+<!--:::: Inicio Pie De Pagina ::::-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+         <a class="navbar-brand" href="index.html"><img src="the-bears-logo-V1/Group 7.png" alt="logo" class="w-75"></a>
+          <span class="navbar-toggler-icon"></span>
+      </div>
+      <div class="box">
+        <h2>Acerca de</h2>
+        <ul>
+          <li><a href="3-aboutUs.html">Quienes somos</a></li>
+          <li><a href="2-promociones.html">Planes</a></li>
+          <li><a href="#">Contactanos</a></li>
+          <li><a href="5-ubicaciones.html">Ubicaciones</a></li>
+        </ul>
+
+      </div>
+      <div class="box">
+        <h2>Siguenos En las Redes</h2>
+        <div class="redes-container">
+          <ul>
+            <li><a href="https://www.facebook.com/" class="facebook"><i class=" fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="instagram"><i class=" fa fa-instagram"></i></a></li>
+            <li><a href="https://www.twitter.com/" class="twitter"><i class=" fa fa-twitter"></i></a></li>
+            <li><a href="https://www.pinterest.com/" class="pinterest"><i class=" fa fa-pinterest"></i></a></li>
+            <li><a href="https://www.youtube.com/" class="youtube"><i class=" fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>Copy; 2023 <b>GrizzleyBearGym</b> - Todos Los Derechos Reservados</small>
+    </div>
+  </footer>
+      
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c0dc498e5c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./index.js"></script>
+
+ 
+</body>
+</html>
