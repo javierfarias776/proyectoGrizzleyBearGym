@@ -1,4 +1,4 @@
-let boton= document.getElementById("btnbtn");
+let boton= document.getElementById("boton");
 boton.addEventListener("click", () => {
     Swal.fire({
         title: "Excelente",

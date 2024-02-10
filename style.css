@@ -1,37 +1,41 @@
+/* ...........................modificaciones generales...................................*/
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-/**/
 *{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-
-    
-    
 }
-
-
-
-nav{/*le agremagos sombra a nuetro navbar*/
+nav{/*agregado de sombra a navbar*/
     box-shadow: 0 0 2rem -1rem; 
     background-color: orange;
-
+}
+.btn{/*modificacione general de los botones de la pagina*/
+    box-shadow: 0 0 10PX rgba(0, 0, 0, .1 );
+    transition-duration: 0.2s;
+    transition-property:box-shadow, transform;
 }
 
-.bodyubi{
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5 );
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+.bodyubi{/* fondo negro del body de ubicaciones*/
     background-color: black;
 }
 
 
 
 
-/*::: animacion subrayado de items en navBar :::*/
+
+/*...................::: animacion subrayado de items en navBar :::...........................*/
 
 .animation ul li a{ /**/
     position: relative;/*la nacesitamos porque trabajaremos con after y before*/
     display: block;
 
 }
-
 .animation ul li a::before{/**/
     content: '';
     position: absolute;
@@ -41,8 +45,8 @@ nav{/*le agremagos sombra a nuetro navbar*/
     height: .2rem;/*modifica la altura de la linea*/
     background: #579d9c;
     transition: .5s;/*modifica la velocidad de la transicion*/
-}
 
+}
 .animation ul li a::after{
     content: '';
     position: absolute;
@@ -52,24 +56,25 @@ nav{/*le agremagos sombra a nuetro navbar*/
     height: .2rem;
     background: black;
     transition: .5s;
-}
 
+}
 .animation ul li:hover a{
     color:white;
-}
 
+}
 .animation ul li:hover a::before{
     width: 50%;/*es el ancho de la linea en el item*/
     transform: translate(100%);/*es el recorrido que hace la animacion en el item*/
 
 }
-
 .animation ul li:hover a::after{
     width: 50%;
     transform: translate(-100%);
+
 }
 
-/*::: section de instalaciones en pag inicio :::*/
+
+/*...................::: section de galeria de imagenes del gym :::................................*/
 .container{
     text-align: center;
     padding: 20px;
@@ -77,27 +82,11 @@ nav{/*le agremagos sombra a nuetro navbar*/
 }
 .row{
      margin: 20px;
-}
-/*::: fin section de instalaciones en pag inicio :::*/
-
-/*::: inicio de card de subscribirme :::*/
-
-.contenedor{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/entrenador-personal-curso-1560362520.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 50px;
-    text-align: center;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 10px;
-    
-    
 
 }
 
+
+/*..................::: card con imagen de fondo (inicio y promociones) :::...................................*/
 
 .contenedor1{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),url(https://bilbao.fisio-clinics.com/sites/default/files/styles/cabecera_articulo/public/field/image/funcional_bilbao.jpg?itok=34o52Hp4);
@@ -113,10 +102,7 @@ nav{/*le agremagos sombra a nuetro navbar*/
 
 }
 
-/*::: fin inicio de card de subscribirme :::*/
-
-
-/*::: section de cards de promociones:::*/
+/*........................................::: section de cards de promociones:::..........................*/
 .contentcards{
     display: flex;
     flex-wrap: wrap;
@@ -124,12 +110,12 @@ nav{/*le agremagos sombra a nuetro navbar*/
     justify-content: center;
     min-height: 75vh;
     background: white;
-}
 
+}
 
 .carta{
     margin: 15px;
-    width: 200px;
+    width: 230px;
     height: 200px;
     border-radius: 5px;
     background: var(--i);
@@ -138,13 +124,6 @@ nav{/*le agremagos sombra a nuetro navbar*/
     min-height: 75vh;
     
 }
-
-.carta img{
-
-    width: 100%;
-    height: 100%;
-}
-
 .content{
     width: 100%;
     height: 100%;
@@ -157,41 +136,34 @@ nav{/*le agremagos sombra a nuetro navbar*/
     transition: .5s;
 
 }
-
-
 .content h2{
     font-size: 2em;
     line-height: 1.6em;
-    color: #808080; 
+    color: orange; 
     margin: 10px 0;
-}
 
+}
 .content p{
-    color: white;
+    color: gray;
     font-size: 1.5em;
  
 }
-
-
 .carta:hover .content{
     opacity: 1;
     border-radius: 5px;
-}
 
+}
 .carta:hover{
     transform: translateY(-3%);
     
 }
 
-/*::: fin de section de cards de promociones:::*/
+/*...................................:::: Pie de pagina ::::.............................*/
 
-/*:::: Pie de pagina ::::*/
-
-.pie-pagina{
+.pie-pagina{/*fondo*/
     width: 100%;
     background-color: gray;
 }
-
 .pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
@@ -200,51 +172,42 @@ nav{/*le agremagos sombra a nuetro navbar*/
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+    
 }
-
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-/*::: box img logo ::: */
-.pie-pagina .grupo-1 .box figure img{
+}
+.pie-pagina .grupo-1 .box figure img{/*box img logo*/
     width: 25px;
+
 }
-
-/*:::box acerca de  :::*/
-
-
-.box ul li {
+.box ul li {/*:::box acerca de  :::*/
     list-style: none;
     
 }
-
 .box ul li a{
     font-size: 15px;
     color: white;
     text-decoration: none;
-}
 
+}
 .box ul li a:hover{
-    
     color: black;
     
-
 }
 /*---------------------------------------Formulario----------------------------------------------------------------------*/
-
 .body-color{
-
     background-color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
 .body-form{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -255,7 +218,6 @@ nav{/*le agremagos sombra a nuetro navbar*/
     min-height: 50vh;
 
 }
-
 .form-content{
     background: linear-gradient(
         50deg,
@@ -269,28 +231,26 @@ nav{/*le agremagos sombra a nuetro navbar*/
      padding: 80px;
      width: 1000px;
      border-radius: 25px;
+
 }
-
 .form-content h2{
-
     color: #f4f6f9;
     font-size: 40px;
     margin-bottom: 25px;
 
 }
-
 form{
     display: flex;
     flex-direction: column;
     width: 50%;
-}
 
+}
 label{
     font-size: 17px;
     color: gray;
     margin-bottom: 10px;
-}
 
+}
 input , textarea{
     padding: 14px 10px;
     background-color: #333646;
@@ -299,52 +259,40 @@ input , textarea{
     color: white;
     margin-bottom: 10px;
     border-radius: 7px;
+
 }
-
-
-:focus{
+input:focus{
     outline: 1px solid aquamarine;
-}
 
-.btnbtn{
+}
+#boton{
     background-color: orange;
     width: 150px;
     align-self: flex-start;
     cursor: pointer;
 
 }
-
-.btnbtn:hover{
+#boton:hover{
     background-color: rgb(238, 175, 58);
+
 }
 
 @media(max-width: 991px){
-    .body-form{
-        padding: 30px;
-    }
+.body-form{
+    padding: 30px;
 
-    .form-content{
-        width: 100%;
-    }
+}
 
-    form{
+.form-content{
+    width: 100%;
+
+}
+
+form{
         width: 100%;
     }
 }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------formulario----------------------------------------------------------------------*/
 
 /* ::: box redes sociales :::*/
@@ -397,18 +345,11 @@ input , textarea{
     background: #55acee;
 }
 .redes-container ul li .pinterest:hover{
-    background: black;
+    background: white;
 }
 .redes-container ul li .youtube:hover{
     background: red;
 }
-
-
-
-
-
-
-
 
 .pie-pagina .grupo-2{
     background-color: black;
@@ -430,3 +371,4 @@ input , textarea{
         padding: 35px 0px;
     }
 };
+
