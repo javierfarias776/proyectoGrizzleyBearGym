@@ -292,18 +292,13 @@ form{
         width: 100%;
     }
 }
-    
-/*---------------------------------------formulario----------------------------------------------------------------------*/
 
-/* ::: box redes sociales :::*/
+/*................................................ ::: box redes sociales. :::......................................*/
 .redes-container{
     display: flex; /**/
     align-items: center;/*alinea item al centro*/
     justify-content: center;/**/
 }
-
-
-
 .redes-container ul li{
     display: inline-block;/*se alinean horizontalmente y quita los puntos de referencia*/
     margin: 0 5px;/*margen*/
@@ -312,7 +307,6 @@ form{
     text-align: center;/*se alinean el elemento a al centro*/
 
 }
-
 .redes-container ul li a{
     display: block;/**/
     padding: 0 10px;/**/
@@ -323,11 +317,9 @@ form{
     box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2 );/*sombra de cuadrado*/
     transition: .2s;/**/
 }
-
 .redes-container ul:hover a{
     filter: blur(2px);/*desenfoca todos los items*/
 }
-
 .redes-container ul li a:hover{
     transform: translateY(-3px) scale(1.05);/*translateY hace que elitem crezca hacia arriba*/
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4 );
@@ -343,23 +335,26 @@ form{
 }
 .redes-container ul li .twitter:hover{
     background: #55acee;
+
 }
 .redes-container ul li .pinterest:hover{
     background: white;
+
 }
 .redes-container ul li .youtube:hover{
     background: red;
-}
 
+}
 .pie-pagina .grupo-2{
     background-color: black;
     padding: 15px 10px;
     text-align: center;
     color: white;
-}
 
+}
 .pie-pagina .grupo-2 small{
     font-size: 15px;
+
 }
 
 /*::: footer responsive :::*/
